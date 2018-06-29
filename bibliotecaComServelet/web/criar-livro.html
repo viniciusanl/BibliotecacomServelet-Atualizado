@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Novo Livro</h1>
+        <form action="cria-livro-servlet" method="POST">
+            <label for="titulo">Título: </label>
+            <input type="text" id="titulo" name="titulo"/><br/>
+            
+            <label for="autor">Autor: </label>
+            <input type="text" id="autor" name="autor"/><br/>
+            
+            <label for="paginas">N° de Páginas: </label>
+            <input type="number" id="paginas" name="paginas" min="1" max="99999"/><br/>
+            
+            <input type="submit" value="Criar Livro"/>
+        </form>
+        <a href="/bibliotecaComServelet">Biblioteca</a>
+    </body>
+</html>
